@@ -1,0 +1,196 @@
+html{
+    scroll-behavior: smooth; /*rolagem suave*/
+}
+
+body{
+    font-family: tahoma, arial, sans-serif;
+    margin: 0; /*muda fonte, tira margem*/
+    padding: 0;
+    background: white;
+}
+
+/*definir tamanho e centralizar*/
+#mprincipal{
+    width: 1024px;
+    margin: auto;
+}
+
+/*INICIO AJUSTAR TOPO E MENU*/
+
+.header-topo{
+    height: 55px;
+    background: #53005f;
+    position: relative;
+}
+
+.logotipo{
+    margin: auto;
+    height: 55px;
+}
+
+/*formatar menu*/
+
+.header-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.header-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.header-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 7px;
+    padding: 0px;
+}
+
+/*FIM AJUSTAR TOPO E MENU*/
+
+/*ARRUMAR O BODY */
+
+.titulo h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+/*ARRUMAR MENUS*/
+
+div{
+    width: 1300px;
+    height: 400px;    
+    display: inline-flex;
+    margin-left: 0px;
+    padding: 0px;
+    align-content: center;
+    
+}
+
+#menuA{
+    
+}
+
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    width: 2000px;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: darkblue;
+    font-size: 20px;
+}
+
+
+.menu1{
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+#oh3{
+    font-size: 30px;
+}
+
+#op3{
+    
+    
+}
+
+
+
+
+/*colocar imagens de fundo*/
+
+#menuA{
+    
+}
+
+#menuB{
+    
+}
+
+
+/*ARRUMAR FOOTER */
+footer{
+    background-color: purple;
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* o responsivo do site */
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body { /* corpo do site */
+        width: 100%;
+    }
+    
+    nav { /* menu acima */
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    nav ul {
+        flex-direction: row;
+       /* width: 50%;*/
+    }
+    
+    /* Cabeçalho*/
+    
+    header{
+        height: 600px;
+        width: 100%;
+     /*   height: 60vh; */
+        justify-content: center;
+    }
+    
+    #principal{
+        width: 100%;
+        height: auto;
+    }
+    
+    #mideias {
+        width: 100%;
+        height: auto;
+    }
+    
+    #titulo h1 {
+        width: 95%;
+        height: auto;
+    }
+    
+    #titulo p {
+        width: 100%;
+    }
+    
+    #menu1 {
+        width: 80%;
+        box-sizing: border-box;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+   
+    
+}

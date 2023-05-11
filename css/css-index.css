@@ -1,0 +1,330 @@
+html{
+    scroll-behavior: smooth; /*rolagem suave*/
+}
+
+body{
+    font-family: tahoma, arial, sans-serif;
+    margin: 0; /*muda fonte, tira margem*/
+    padding: 0;
+    background: white;
+}
+
+/*definir tamanho e centralizar*/
+#principal{
+    width: 1024px;
+    margin: auto;
+}
+
+/*INICIO AJUSTAR TOPO E MENU*/
+
+.header-topo{
+    height: 55px;
+    background: #53005f;
+    position: relative;
+}
+
+.logotipo{
+    margin: auto;
+    height: 55px;
+}
+
+/*formatar menu*/
+
+.header-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.header-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.header-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 0 15px 0 0;
+    padding: 15px;
+}
+.header-nav a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+/*FIM AJUSTAR TOPO E MENU*/
+
+/*FORMATAR FUNDO BOTÃO*/
+
+.inicio{
+    background-image: url(../imagens/imagem-topo.png);
+    background-repeat: no-repeat;
+    background-size: contain; /* colocar tudo isso para imagens backgrouund */
+    padding: 5px;
+    color: white;
+    width: 1024px;
+    height: 565px;
+}
+
+.inicio h1{
+    text-align: right;
+    margin-right: 50px;
+    font-size: 100px;
+}
+
+.inicio p{
+    text-align: right;
+    margin-right: 50px;
+    margin-left: 500px;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+/*FORMATAR BOTAO*/
+
+.botao{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 30px 10px;
+    display: inline-block;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    margin: 4px 40px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    float: right;
+}
+
+.botao a{
+    text-decoration: none;
+}
+
+/* INICIO AJUSTAR SOBRE */
+
+.sobre{
+    padding: 0px 50px;
+    text-align: center;
+}
+.sobre h1{
+    font-size: 36px;
+    color: black;
+}
+.sobre h2{
+    font-size: 26px;
+    color: dimgray;
+}
+.sobre p{
+    font-size: 20px;
+    line-height: 2;
+    color: darkslategray;
+}
+
+/* INICIO LOGOS EMBAIXO SOBRE*/
+
+.logos-descricoes{
+    color: black;
+    padding: 0 50px 50px 50px; /*cima direita baixo esquerda*/
+    overflow: auto;
+}
+
+.logos-descricoes h4{ /*botao voltar ao inicio*/
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logos{
+    width: 25%;
+    object-fit: fill;
+    float: left;
+    text-align: center;
+}
+
+.logos-texto{
+    font-weight: normal;
+}
+
+.contato{
+  /*  background-color: purple;*/
+    padding: 25px;
+    color: white;
+    background-image: url(../imagens/degrade1.png);
+    background-position: right bottom;
+    line-height: 1.5;
+    width: 70;
+}
+
+.contato h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 10px;
+   /* text-decoration: overline underline;
+    text-decoration-style: double;*/
+}
+
+.contato h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#facul{
+    text-align: center;
+}
+
+.contato h4{ /*botao voltar ao inicio*/
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: lightblue;
+}
+
+.tvoltar{
+    color: lightblue;
+    font-weight: bold;
+}
+
+.clattes{
+    text-transform: uppercase;
+    color: lightblue;
+    font-weight: bold;
+}
+
+/* arrumar footer */
+
+footer{
+    background-color: purple;
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* o responsivo do site */
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body { /* corpo do site */
+        background-color: lightblue;
+        width: 100%;
+    }
+    
+    nav { /* menu acima */
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    nav ul {
+        flex-direction: row;
+       /* width: 50%;*/
+    }
+    
+    /* Cabeçalho*/
+    
+    header{
+        height: 600px;
+     /*   height: 60vh; */
+        justify-content: center;
+    }
+    
+    #principal{
+        width: 100%;
+        height: auto;
+    }
+    
+    #inicio {
+    /*    flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto; */
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #inicio h1 {
+        width: 95%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    #inicio p {
+        font-size: 15px;
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 250px;
+        margin-bottom: 100px;
+    }
+    
+    #inicio button {
+        font-size: 15px;
+        padding: 20px 10px;
+        margin-top: 0px;
+        flex-direction: row;
+    }
+    
+    /*imagens*/
+    
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #logos-descricoes p{
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* responsivo maps */
+    
+    #maps{
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    #maps iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

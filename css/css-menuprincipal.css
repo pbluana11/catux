@@ -1,0 +1,239 @@
+html{
+    scroll-behavior: smooth; /*rolagem suave*/
+}
+
+body{
+    font-family: tahoma, arial, sans-serif;
+    margin: 0; /*muda fonte, tira margem*/
+    padding: 0;
+    background: white;
+}
+
+/*definir tamanho e centralizar*/
+#mprincipal{
+    width: 1024px;
+    margin: auto;
+}
+
+/*INICIO AJUSTAR TOPO E MENU*/
+
+.header-topo{
+    height: 55px;
+    background: #53005f;
+    position: relative;
+}
+
+.logotipo{
+    margin: auto;
+    height: 55px;
+}
+
+/*formatar menu*/
+
+.header-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.header-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.header-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 7px;
+    padding: 0px;
+}
+
+/*FIM AJUSTAR TOPO E MENU*/
+
+/*ARRUMAR O BODY */
+
+.minicio h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.minicio p{
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+/*menus botões */
+.menus{
+    padding: 50px 50px 0px 50px; /*cima direita baixo esquerda*/
+    overflow: auto;
+    display: flex; /*colocar as coisas lado a lado*/
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    
+}
+/* arrumar botões */
+
+.menus a{
+     /*arrumar texto*/
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px 5px white;
+    font-size: 25px;
+    font-family: fantasy; 
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 100px;
+    cursor: pointer;
+}
+
+.b1{    
+    /*arrumando botão*/
+    width: 300px;
+    height: 300px;    
+    border: none;
+    background-color: white;
+        
+    /*arrumando imagem botão*/
+    background-image: url(../imagens/mbt1.png);
+    background-size: contain; /*REDIMENSIONAR IMMAGEM*/
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.b2{    
+    /*arrumando botão*/
+    width: 300px;
+    height: 300px; 
+    border: none;
+    background-color: white;
+        
+    /*arrumando imagem botão*/
+    background-image: url(../imagens/mbt2.png);
+    background-size: contain; /*REDIMENSIONAR IMMAGEM*/
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.b3{    
+    /*arrumando botão*/
+    width: 300px;
+    height: 300px;   
+    border: none;
+    background-color: white;
+    
+    /*arrumando imagem botão*/
+    background-image: url(../imagens/mbt3.png);
+    background-size: contain; /*REDIMENSIONAR IMMAGEM*/
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.b4{    
+    /*arrumando botão*/
+    width: 300px;
+    height: 300px; 
+    border: none;
+    background-color: white;
+    
+    /*arrumando imagem botão*/
+    background-image: url(../imagens/mbt4.png);
+    background-size: contain; /*REDIMENSIONAR IMMAGEM*/
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#menu1{
+    width: 100px;
+    height: 50px;
+    border: 3px solid purple;
+    display: inline-flex;
+}
+
+
+.dicas{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 205px;
+    height: 50px;
+}
+
+a.menu1e{
+    text-align: center;
+    color: purple;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: monospace;
+    text-decoration: none;
+    margin: auto;
+}
+
+
+
+/*ARRUMAR FOOTER */
+footer{
+    background-color: purple;
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body { /* corpo do site */
+        width: 100%;
+    }
+    
+    nav { /* menu acima */
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    nav ul {
+        flex-direction: row;
+       /* width: 50%;*/
+    }
+    
+    /* Cabeçalho*/
+    
+    header{
+        height: 100%;
+     /*   height: 60vh; */
+        justify-content: center;
+    }
+    
+    #mprincipal{
+        width: 100%;
+        height: auto;
+    }
+    
+    #menus{
+        padding-left: 0;
+    }
+    
+    #menus button{
+        width: 140px;
+        display: flex;
+    }
+    
+    #menus a{
+        text-align: center;
+        font-size: 20px;
+    }
+    
+}
+
