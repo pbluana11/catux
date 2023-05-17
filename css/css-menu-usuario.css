@@ -127,6 +127,8 @@ footer{
     text-align: center;
     margin-top: 20px;
     position: absolute;
+    height: 25px;
+    width: 100%;
 }
 
 /* o responsivo do site */
