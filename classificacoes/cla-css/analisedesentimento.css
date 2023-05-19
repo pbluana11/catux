@@ -75,7 +75,7 @@ div{
 
 .div1{
     width: 600px;
-    height: 200px;
+    height: 230px;
     background-color: azure;
     margin-left: 50px;
 }
@@ -100,7 +100,7 @@ div{
 
 .div2{
     width: 600px;
-    height: 185px;
+    height: 200px;
     background-color: azure;
     margin-left: 50px;
     position: absolute;
@@ -127,7 +127,7 @@ div{
 
 .div3{
     width: 1000px;
-    height: 480px;
+    height: 930px;
     background-color: azure;
     position: static;
     margin-top: 50px;
